@@ -2,9 +2,9 @@
 Projektmedlemmar: 
 [Niklas Krook (nk222ch)](https://github.com/nk222ch)
 
-[Körbar version av projektet](http://nk222ch.github.io/GoWorld)
+[Körbar version av projektet](https://github.com/nk222ch/ProjektskelettHT13/tree/GoWorld/GoWorld)
 
-*Det körbara projektet kommer att länkas ovan med hjälp av en gh-pages-branch.*
+*Länken kommer att uppdateras löpande.*
 
 # Introduktion
 En nätbaserad resebyrå kan se ut på en hel del olika sätt, och tillhandahålla tjänster i varierande grad av 
