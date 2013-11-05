@@ -1,0 +1,165 @@
+/*
+
+Sidans färger:
+
+    Bakgrunder:
+
+        #ECFCF8 = Svagt ljusblå................elementbakgrund
+
+    Detaljer etc:
+
+        #0E80AF = Blå.................................rubriker
+        #0C6489 = Mörkare blå.........navlinks, stora rubriker
+        #9CDCF6 = Ljusblå..................altenativa rubriker
+        #7A5F2F = Orange......................ram för detaljer
+        #DBA84E = Ljusare orange......................detaljer
+    
+    Text:
+
+        #333333 = Mörkbrun............................brödtext
+
+*/
+
+
+/*:::::::::::::::Stilar för hela projektet:::::::::::::::*/
+
+
+body {
+	margin: 0; 
+    padding: 0;
+    width: 100%; 
+	font: small "Lucida Grande", Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+/*:::::::::::::::Stilar för headern:::::::::::::::*/
+
+#header {
+	margin-bottom: 1.75em; 
+    padding-top: 1px;
+	background: #ECFCF8;
+}
+
+#homelink {
+	display: block;
+	margin: 1em 2em 1em; 
+    padding: 2em 0 0.5em 1em;
+}
+
+#navlinks {
+	margin: 0; 
+    padding: 0.5em 3em;
+	background: #0C6489; 
+    color: #FFF;
+}
+
+.portalnav {
+    display: none;
+}
+
+#navlinks li {
+	display: inline;
+	margin-right: 0.5em; 
+    padding-right: 0.75em;
+	border-right: 1px solid #99C;
+	font-weight: bold;
+}
+
+#navlinks li.last {
+	border-right: 0;
+}
+
+#navlinks a {
+	color: #DBA84E;
+}
+
+#today {
+	margin-top: -1.66em; 
+    padding: 0 2em 0 0;
+	color: #FFF;
+	font-weight: bold;
+	text-align: right;
+	line-height: 1;
+}
+
+#navlinks li:hover {
+    text-decoration: underline;
+}
+
+.active {
+    /*Här ville jag ha en överlappning, så att man ser vilken sida man befinner sig på*/
+    background-color: #ECFCF8;
+    padding: 0.5em;
+} 
+
+/*:::::::::::::::Stilar för innehåll:::::::::::::::*/
+
+#content {
+    width: 920px;
+    float: left;
+    padding: 0em 0em 0em 0em;
+    min-height: 40em;
+    background-color: #FFFFFF;
+}
+
+#content h1 {
+	margin: 0 33% 1.25em 0em; 
+    padding: 0.5em 2em;
+	background: #9CDCF6;
+	font-size: 1.5em;
+}
+
+#content h1 b {
+    /*color: #7A5F2F;*/
+    color: #FFFFFF;
+}
+
+#content h2 {
+	margin: 0.5em 0; 
+    padding-bottom: 0.25em;
+	border-bottom: 1px solid #7A5F2F;
+	font-size: 1.5em;
+}
+
+#content img.plugins {
+    float: right;
+    margin: -4em 0em 0em 0em
+}
+
+.imagemap {
+    display:none;
+    float: left;
+    margin-top: 2em;
+    padding-left: 3.5em;
+}
+
+/*:::::::::::::::Stilar för sidebars:::::::::::::::*/
+
+
+/*:::::::::::::::Stilar för footern:::::::::::::::*/
+
+#footer {
+	clear: both;
+	padding: 1.5em 3em;
+	background: #ECFCF8;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#footer a {
+	color: #333;
+	text-decoration: underline;
+}

@@ -1,0 +1,343 @@
+/*
+
+Sidans färger:
+
+    Bakgrunder:
+
+        #ECFCF8 = Svagt ljusblå................elementbakgrund
+
+    Detaljer etc:
+
+        #0E80AF = Blå.................................rubriker
+        #0C6489 = Mörkare blå.........navlinks, stora rubriker
+        #9CDCF6 = Ljusblå..................altenativa rubriker
+        #7A5F2F = Orange......................ram för detaljer
+        #DBA84E = Ljusare orange......................detaljer
+    
+    Text:
+
+        #333333 = Mörkbrun............................brödtext
+
+*/
+
+
+/*:::::::::::::::Stilar för hela projektet:::::::::::::::*/
+
+body {
+	margin: 0; 
+    padding: 0;
+    width: 100%; 
+	font: small "Lucida Grande", Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+/*:::::::::::::::Stilar för headern:::::::::::::::*/
+
+#header {
+	margin-bottom: 1.75em; 
+    padding-top: 1px;
+	background: #ECFCF8;
+}
+
+#homelink {
+	display: block;
+	margin: 1em 2em 1em; 
+    padding: 2em 0 0.5em 1em;
+}
+
+#navlinks {
+	margin: 0; 
+    padding: 0.5em 3em;
+	background: #0C6489; 
+    color: #FFF;
+}
+
+.portalnav {
+    display: none;
+}
+
+#navlinks li {
+	display: inline;
+	margin-right: 0.5em; 
+    padding-right: 0.75em;
+	border-right: 1px solid #99C;
+	font-weight: bold;
+}
+
+#navlinks li.last {
+	border-right: 0;
+}
+
+#navlinks a {
+	color: #DBA84E;
+}
+
+#today {
+    display: none;
+	margin-top: -1.66em; 
+    padding: 0 2em 0 0;
+	color: #FFF;
+	font-weight: bold;
+	text-align: right;
+	line-height: 1;
+}
+
+#navlinks li:hover {
+    text-decoration: underline;
+}
+
+.active {
+    /*Här ville jag ha en överlappning, så att man ser vilken sida man befinner sig på*/
+    background-color: #ECFCF8;
+    padding: 0.5em;
+} 
+
+/*:::::::::::::::Stilar för innehåll:::::::::::::::*/
+
+#content {
+	float: left;
+	padding: 0 20em 4em 3em;
+    min-height: 40em;
+    background-color: #FFFFFF;
+}
+
+#content h1 {
+    /*Ville ha denna ram mer åt vänster*/
+	margin: 0 33% 1.25em -2em; 
+    padding: 0.5em 2em;
+	background: #9CDCF6;
+	font-size: 1.5em;
+}
+
+#content h1 b {
+    /*color: #7A5F2F;*/
+    color: #FFFFFF;
+}
+
+#content h2 {
+	margin: 0.5em 0; 
+    padding-bottom: 0.25em;
+	border-bottom: 1px solid #7A5F2F;
+	font-size: 1.5em;
+}
+
+#content img.banner1 {
+	float: left;
+	margin: 1em 1em 1em 0;
+}
+
+#content img.banner2 {
+    display: none;
+	float: right;
+    padding: 0;
+	margin-top: -19em;
+    margin-right: 36em;
+    margin-bottom: 1em;
+}
+
+#content img.plugins {
+    display: none;
+    float: right;
+    margin: -4em 0em 0em 0em
+}
+
+/*#bookingform form {
+    float: right;
+    margin: 0em 0em 2em 2em;
+    background: #ECFCF8;
+    display: block;
+}*/
+
+#content form {
+    background-color: #ECFCF8;
+    margin: 1em 1em 1em 0em;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    display: block;
+    width: 33%;
+}
+
+input select {
+    width: 10em;
+    float: left;
+    margin-top: 0.5em;
+}
+
+.airlines {
+    color: blue;
+}
+
+table {
+    background-color: #ECFCF8;
+}
+
+td {
+    padding: 0.5em;
+}
+
+.goldbar {
+    background-color: #cd972f;
+}
+
+.silverbar {
+    background-color: #7f7f7f;
+}
+
+.bronzebar {
+    background-color: #ba6a3a;
+}
+
+#images {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 3em auto;
+}
+#images img {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+}
+#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+}
+#images img:first-child {
+    left: 0;
+}
+
+.numberlinks {
+    margin-right: 22em;
+    margin-left: 22em;
+    padding-left: 20em;
+    position: relative;
+}
+#slider a {
+    text-decoration: none;
+    background: #E3F1FA;
+    border: 1px solid #7A5F2F;
+    padding: 1.2em;
+    color: #DBA84E;
+    margin-right: 2em;
+}
+#slider a:hover {
+    background: #C6E4F2;
+}
+
+.imagemap {
+    float: left;
+    margin-top: 2em;
+}
+
+/*:::::::::::::::Stilar för sidebars:::::::::::::::*/
+
+#sidebar {
+	float: left;
+	width: 17em;
+    /*Här kan man använda ett trick som jag såg på nätet - att sätta ett minusvärde för att få div-element att hamna rätt*/
+	margin: 0 0 4em -18em;
+}
+
+#sidebar form, #sidebar div h3 {
+	background: #0E80AF;
+}
+
+#sidebar form {
+	margin: 0; 
+    padding: 0.8em;
+}
+
+#sidebar form .text {
+	width: 9em;
+}
+
+#sidebar p {
+    padding-bottom: 1em;
+}
+
+#sidebar div {
+	background: #ECFCF8; 
+    color: #333333;
+	padding: 0 1em 1em;
+	margin-top: 0.75em;
+}
+
+#sidebar div h3 {
+	font-size: 1.25em;
+    color: #FFFFFF;
+	margin: 0 -0.8em; 
+    padding: 0.4em 0.8em;
+}
+
+#hotelreview h4 {
+	margin: 0 0 0.5em; 
+    padding: 0.5em 0;
+	border-bottom: 1px solid #FFF;
+	font-weight: normal;
+}
+
+#hotelreview img {
+	display: block;
+	margin: 0;
+}
+
+#directbooking table {
+	margin: 0 auto;
+	font-size: smaller;
+}
+
+#directbooking caption {
+	margin: 1em auto 0;
+	font-size: larger;
+	font-weight: bold;
+}
+
+#directbooking td {
+	padding: 0;
+	border: 1px solid #7A5F2F;
+	background: #DBA84E; 
+    color: #222;
+	text-align: center;
+}
+
+#directbooking table a {
+	font-weight: bold;
+	color: #FFF;
+}
+
+/*:::::::::::::::Stilar för footern:::::::::::::::*/
+
+#footer {
+	clear: both;
+	padding: 1.5em 3em;
+	background: #ECFCF8;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#footer a {
+	color: #333;
+	text-decoration: underline;
+}
